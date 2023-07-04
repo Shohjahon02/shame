@@ -1,4 +1,4 @@
-with open('good_test_words.csv', 'r') as file:
+with open('uz_good_train_words.csv', 'r') as file:
  
  i= 1
  for line in file:
@@ -6,6 +6,6 @@ with open('good_test_words.csv', 'r') as file:
     word = words[1]
     middle_word = word.split()[0]
     print(middle_word)
-    with open(f"data/test/pos/{i}.txt", "w") as f:
+    with open(f"data_uz/train/pos/{i}.txt", "w") as f:
         f.write(middle_word)
     i+=1
